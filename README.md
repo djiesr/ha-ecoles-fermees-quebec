@@ -1,5 +1,9 @@
 # Écoles fermées Québec
 
+<p align="center">
+  <img src="custom_components/ecoles_fermees_quebec/brand/icon.png" width="128" height="128" alt="Logo Écoles fermées Québec">
+</p>
+
 Intégration Home Assistant pour suivre les fermetures d’écoles au Québec (tempêtes, transport, etc.) via l’API JSON de [TVA Nouvelles](https://www.tvanouvelles.ca/etat-ecoles-fermees).
 
 À l’installation, vous cherchez une école puis la sélectionnez. Chaque école devient un appareil avec ses capteurs. Pour une 2e ou 3e école, ajoutez l’intégration une autre fois.
