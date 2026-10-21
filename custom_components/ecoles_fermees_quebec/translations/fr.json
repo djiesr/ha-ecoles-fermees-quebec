@@ -1,0 +1,62 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
+    },
+    "error": {
+      "already_configured": "Cette école est déjà configurée",
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "invalid_school": "Choisissez une école dans la liste",
+      "no_schools": "Aucune école ne correspond à cette recherche",
+      "search_too_short": "Entrez au moins 2 caractères",
+      "too_many_matches": "Trop d'écoles correspondent. Ajoutez une ville ou un nom plus précis."
+    },
+    "step": {
+      "user": {
+        "title": "Ajouter une école",
+        "description": "Recherchez par nom d'école ou par ville. Vous pouvez ajouter plusieurs écoles en réinstallant l'intégration.",
+        "data": {
+          "search": "Nom de l'école ou ville"
+        }
+      },
+      "school": {
+        "title": "Choisir une école",
+        "description": "{count} école(s) trouvée(s). Sélectionnez celle à ajouter.",
+        "data": {
+          "school_id": "École"
+        }
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "closed": {
+        "name": "Fermée"
+      }
+    },
+    "sensor": {
+      "status": {
+        "name": "Statut",
+        "state": {
+          "open": "Ouverte",
+          "closed": "Fermée"
+        }
+      },
+      "message": {
+        "name": "Message",
+        "state": {
+          "none": "Aucun"
+        }
+      },
+      "informations": {
+        "name": "Détails",
+        "state": {
+          "none": "Aucun"
+        }
+      },
+      "last_updated": {
+        "name": "Dernière mise à jour"
+      }
+    }
+  }
+}

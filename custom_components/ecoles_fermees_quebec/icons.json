@@ -1,0 +1,30 @@
+{
+  "entity": {
+    "binary_sensor": {
+      "closed": {
+        "default": "mdi:snowflake-alert",
+        "state": {
+          "off": "mdi:school"
+        }
+      }
+    },
+    "sensor": {
+      "status": {
+        "default": "mdi:school",
+        "state": {
+          "closed": "mdi:snowflake-alert",
+          "open": "mdi:school"
+        }
+      },
+      "message": {
+        "default": "mdi:message-text-outline"
+      },
+      "informations": {
+        "default": "mdi:information-outline"
+      },
+      "last_updated": {
+        "default": "mdi:clock-outline"
+      }
+    }
+  }
+}

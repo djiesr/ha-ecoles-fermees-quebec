@@ -1,0 +1,62 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
+    },
+    "error": {
+      "already_configured": "This school is already configured",
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "invalid_school": "Please select a school from the list",
+      "no_schools": "No school matches this search",
+      "search_too_short": "Enter at least 2 characters",
+      "too_many_matches": "Too many schools match. Add a city or a more precise name."
+    },
+    "step": {
+      "user": {
+        "title": "Add a school",
+        "description": "Search by school name or city. You can add several schools by installing the integration again.",
+        "data": {
+          "search": "School name or city"
+        }
+      },
+      "school": {
+        "title": "Select a school",
+        "description": "{count} school(s) found. Choose the one to add.",
+        "data": {
+          "school_id": "School"
+        }
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "closed": {
+        "name": "Closed"
+      }
+    },
+    "sensor": {
+      "status": {
+        "name": "Status",
+        "state": {
+          "open": "Open",
+          "closed": "Closed"
+        }
+      },
+      "message": {
+        "name": "Message",
+        "state": {
+          "none": "None"
+        }
+      },
+      "informations": {
+        "name": "Details",
+        "state": {
+          "none": "None"
+        }
+      },
+      "last_updated": {
+        "name": "Last update"
+      }
+    }
+  }
+}
